@@ -8,7 +8,7 @@ Esse loop ficou sozinho responsável por muitas atividades, entre elas:
 
 - Identificar todos as teclas apertadas pelos usuários
 
-- Tomar atitude de acordo com a tecla inserida (atualizar posição atirar projéteis, por exemplo)
+- Tomar atitude de acordo com a tecla inserida (mudar velocidade para atualizar posição, atirar projéteis, por exemplo)
 
 - Plotar mudanças na tela do jogo
 
