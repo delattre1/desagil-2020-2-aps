@@ -1,0 +1,25 @@
+https://github.com/delattre1/projeto_final_desoft.git
+
+https://github.com/delattre1/projeto_final_desoft/blob/master/joguinho.py - Arquivo selecionado para ilustrar problema de coesão
+
+A partir da linha 185 até a 419 há o loop "tutorial".
+
+Esse loop ficou sozinho responsável por muitas atividades, entre elas:
+
+- Identificar todos as teclas apertadas pelos usuários
+
+- Tomar atitude de acordo com a tecla inserida (atualizar posição atirar projéteis, por exemplo)
+
+- Plotar mudanças na tela do jogo
+
+- Identificar em qual etapa do tutorial os jogadores estão
+
+- Fazer mudanças de acordo com cada etapa
+
+Em relação a parte que atualiza a posição e dispara projéteis, a mesma lógica já havia sido desenvolvida no mesmo código, podendo ser reduzida a só uma função, que seria reutilizada durante todo o código, quando necessária.
+
+Além disso, em relação à etapa que faz as mudanças de tela para instruir os jogadores, a partir da linha 293 até o final do loop, a mesma estrutura de código foi repetida 7 vezes, utilizando em torno de 25 linhas por repetição. Dessa forma, esse while do tutorial poderia ser simplificado criando uma função para reduzir a repetição de código para as etapas do tutorial. 
+
+
+
+
