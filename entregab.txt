@@ -16,10 +16,10 @@ Esse loop ficou sozinho responsável por muitas atividades, entre elas:
 
 - Fazer mudanças de acordo com cada etapa
 
-Em relação a parte que atualiza a posição e dispara projéteis, a mesma lógica já havia sido desenvolvida no mesmo código, podendo ser reduzida a só uma função, que seria reutilizada durante todo o código, quando necessária.
+Em relação a parte que atualiza a posição e dispara projéteis, a mesma lógica já havia sido desenvolvida no mesmo código, podendo ser dividida entre duas funções, para alterar a velocidade, a disparar projéteis. Que seriam reutilizadas durante todo o código, quando necessária.
 
 Além disso, em relação à etapa que faz as mudanças de tela para instruir os jogadores, a partir da linha 293 até o final do loop, a mesma estrutura de código foi repetida 7 vezes, utilizando em torno de 25 linhas por repetição. Dessa forma, esse while do tutorial poderia ser simplificado criando uma função para reduzir a repetição de código para as etapas do tutorial. 
 
+Criar função para realizar as plotagens, não somente dentro desse loop, mas que poderia ser utilizada no restante do projeto.
 
-
-
+Sendo assim, ao final da refatoração, o loop do tutorial ficaria restrito à chamada dessas funções específicas para cada atividade. 
