@@ -20,7 +20,7 @@ public class OrGate extends Gate {
 
     @Override
     public void connect(int inputIndex, Emitter emitter) {
-        if (inputIndex != 0) {
+        if (inputIndex < 0 || inputIndex > 1) {
             throw new IndexOutOfBoundsException(inputIndex);
         }
 
